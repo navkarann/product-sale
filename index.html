@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>prices of products</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <marquee>
+        <h1>
+          UP TO <spam class="thirty">30%</spam> OFF MEGA DISCOUNT
+        </h1></marquee
+      >
+    </header>
+    <div class="gallery">
+      <div class="content">
+        <img src="images/shoespic.png" />
+        <h3>shoes</h3>
+        <p>
+          lorem ipsum is simple dummy textof the printing and typesetting
+          industry
+        </p>
+        <h6>$150</h6>
+        <ul>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star"></i></li>
+        </ul>
+        <button class="buy-1">Buy Now</button>
+      </div>
+
+      <div class="content">
+        <img src="images/iphone15.png" />
+        <h3>I phone 15 pro max</h3>
+        <p>
+          lorem ipsum is simple dummy textof the printing and typesetting
+          industry
+        </p>
+        <h6>$750</h6>
+        <ul>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star checked"></i></li>
+        </ul>
+
+        <button class="buy-2">Buy Now</button>
+      </div>
+
+      <div class="content">
+        <img src="images/shirt.png" />
+        <h3>T-shirt for men</h3>
+        <p>
+          lorem ipsum is simple dummy textof the printing and typesetting
+          industry
+        </p>
+        <h6>$50</h6>
+        <ul>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star checked"></i></li>
+        </ul>
+
+        <button class="buy-3">Buy Now</button>
+      </div>
+
+      <div class="content">
+        <img src="images/watch.png" />
+        <h3>watches</h3>
+        <p>
+          lorem ipsum is simple dummy textof the printing and typesetting
+          industry
+        </p>
+        <h6>$270</h6>
+        <ul>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star checked"></i></li>
+        </ul>
+
+        <button class="buy-4">Buy Now</button>
+      </div>
+    </div>
+    <footer>
+      <p>Designed By Shubham Sharma</p>
+    </footer>
+  </body>
+</html>
+ 147 changes: 147 additions & 0 deletions147  
+style.css
+Original file line number	Diff line number	Diff line change
+@@ -0,0 +1,147 @@
+body {
+  margin: 0px;
+  font-family: sans-serif;
+  background-color: #ffffff;
+  background-image: url(images/board.jfif);
+  image-resolution: inherit;
+}
+h1 {
+  color: #fff;
+  font-style: oblique;
+}
+h3 {
+  text-align: center;
+  font-size: 30px;
+  margin: 0px;
+  padding-top: 10px;
+}
+a {
+  text-decoration: none;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0;
+}
+.content {
+  width: 20%;
+  margin: 15px;
+  box-sizing: border-box;
+  float: left;
+  text-align: center;
+  border-radius: 20px;
+  cursor: pointer;
+  padding-top: 10px;
+  box-shadow: 0px 14px 28px rgba(0, 0, 0, 0.5), 0 10px 10px rgba(0, 0, 0, 0.25);
+
+  transition: 0.2s;
+  background: #f1f0f0;
+}
+.content:hover {
+  background-color: rgb(255, 251, 226);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  transform: translate(0px, -18px);
+  border-style: solid;
+  border-color: #ff9f43;
+}
+.thirty {
+  color: #ffc400;
+}
+img {
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+}
+p {
+  text-align: center;
+  color: #b2bec3;
+  padding-top: 0 8px;
+}
+h6 {
+  font-size: 26px;
+  text-align: center;
+  color: #222f3e;
+  margin: 0;
+}
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+li {
+  padding: 5px;
+}
+.fa {
+  font-size: 26px;
+}
+.checked {
+  color: #ff9f43;
+}
+
+button {
+  text-align: center;
+  font-size: 24px;
+  color: #fff;
+  width: 100%;
+  padding: 15px;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  margin-top: 5px;
+  border-bottom-right-radius: 20px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.buy-1:hover {
+  background-color: #10c045;
+}
+.buy-2:hover {
+  background-color: #10c045;
+}
+.buy-3:hover {
+  background-color: #10c045;
+}
+.buy-4:hover {
+  background-color: #10c045;
+}
+.buy-1 {
+  background: #2183a2;
+}
+.buy-2 {
+  background: #3b3e6e;
+}
+
+.buy-3 {
+  background: #0b0b0b;
+}
+
+.buy-4 {
+  background: #ff9f43;
+}
+footer p:hover {
+  color: #ffc400;
+}
+
+footer p {
+  color: #faf7f7;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: bolder;
+}
+@media (max-width: 1000px) {
+  .content {
+    width: 45%;
+  }
+}
+@media (max-width: 750px) {
+  .content {
+    width: 100%;
+  }
+}
